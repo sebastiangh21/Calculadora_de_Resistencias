@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Calculadora de Resistencias</string>
+    <string name="band_1">Banda 1</string>
+    <string name="band_2">Banda 2</string>
+    <string name="band_3">Banda 3</string>
+    <string name="multiplier">Multiplicador</string>
+    <string name="tolerance">Tolerancia</string>
+    <string name="temperature_coefficient">Coeficiente de\n<br>temperatura</br></string>
+    <string name="band_description">Bandas de la resistencia imagen</string>
+    <string name="calculate">Calcular</string>
+    <string name="result">Resultado</string>
+
+    <string-array name="band_list">
+        <item>4 Bandas</item>
+        <item>5 Bandas</item>
+        <item>6 Bandas</item>
+    </string-array>
+
+    <string-array name="band1_list">
+        <item>Marron: 1</item>
+        <item>Rojo: 2</item>
+        <item>Naranja: 3</item>
+        <item>Amarillo: 4</item>
+        <item>Verde: 5</item>
+        <item>Azul: 6</item>
+        <item>Violeta: 7</item>
+        <item>Gris: 8</item>
+        <item>Blanco: 9</item>
+    </string-array>
+
+    <string-array name="band23_list">
+        <item>Negro: 0</item>
+        <item>Marron: 1</item>
+        <item>Rojo: 2</item>
+        <item>Naranja: 3</item>
+        <item>Amarillo: 4</item>
+        <item>Verde: 5</item>
+        <item>Azul: 6</item>
+        <item>Violeta: 7</item>
+        <item>Gris: 8</item>
+        <item>Blanco: 9</item>
+    </string-array>
+
+    <string-array name="multiplier_list">
+        <item>Negro: 1</item>
+        <item>Marron: 10</item>
+        <item>Rojo: 100</item>
+        <item>Naranja: 1k</item>
+        <item>Amarillo: 10k</item>
+        <item>Verde: 100k</item>
+        <item>Azul: 1M</item>
+        <item>Violeta: 10M</item>
+        <item>Gris: 100M</item>
+        <item>Blanco: 1G</item>
+        <item>Oro: 0.1</item>
+        <item>Plata: 0.01</item>
+    </string-array>
+
+    <string-array name="tolerance_list">
+        <item>Marron: \u00B11% </item>
+        <item>Rojo: \u00B12%</item>
+        <item>Naranja: \u00B10.05%</item>
+        <item>Amarillo: \u00B10.02%</item>
+        <item>Verde: \u00B10.5%</item>
+        <item>Azul: \u00B10.25%</item>
+        <item>Violeta: \u00B10.1%</item>
+        <item>Gris: \u00B10.01%</item>
+        <item>Oro: \u00B15%</item>
+        <item>Plata: \u00B110%</item>
+        <item>Ninguno: \u00B120%</item>
+    </string-array>
+
+    <string-array name="temperature_coefficient_list">
+        <item>Negro: 250ppm/\u2103</item>
+        <item>Marron: 100ppm/\u2103</item>
+        <item>Rojo: 50ppm/\u2103</item>
+        <item>Naranja: 15ppm/\u2103</item>
+        <item>Amarillo: 25ppm/\u2103</item>
+        <item>Verde: 20ppm/\u2103</item>
+        <item>Azul: 10ppm/\u2103</item>
+        <item>Violeta: 5ppm/\u2103</item>
+        <item>Gris: 1ppm/\u2103</item>
+    </string-array>
+
+</resources>

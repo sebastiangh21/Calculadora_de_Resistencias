@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightsteelblue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/multiplier_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/band_3_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintStart_toEndOf="@+id/temperature_coefficient_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/color3_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/multiplier_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/band_1_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/color_1_image_view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tolerance_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/temperature_coefficient_image_view"
+        app:layout_constraintStart_toEndOf="@+id/band_2_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/color_1_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/color_2_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/temperature_coefficient_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/band_3_image_view"
+        app:layout_constraintStart_toEndOf="@+id/tolerance_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/color_2_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/color3_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/band_2_image_view"
+        android:layout_width="19dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/tan"
+        android:contentDescription="@string/band_description"
+        app:layout_constraintBottom_toTopOf="@+id/selection_band_spinner"
+        app:layout_constraintStart_toEndOf="@+id/multiplier_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/selection_band_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/base_gray"
+        android:entries="@array/band_list"
+        android:popupBackground="@color/base_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiplier_image_view" />
+
+    <TextView
+        android:id="@+id/band_1_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/band_1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <TextView
+        android:id="@+id/band_2_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:enabled="true"
+        android:text="@string/band_2"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <TextView
+        android:id="@+id/band_3_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="@string/band_2"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <TextView
+        android:id="@+id/band_4_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:text="@string/multiplier"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <TextView
+        android:id="@+id/band_5_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:text="@string/tolerance"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <TextView
+        android:id="@+id/band_6_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="@string/temperature_coefficient"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <Spinner
+        android:id="@+id/band_1_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/base_gray"
+        android:entries="@array/band1_list"
+        android:popupBackground="@color/base_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/band_1_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <Spinner
+        android:id="@+id/band_2_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/base_gray"
+        android:entries="@array/band23_list"
+        android:popupBackground="@color/base_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/band_1_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <Spinner
+        android:id="@+id/band_3_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/base_gray"
+        android:entries="@array/band23_list"
+        android:popupBackground="@color/base_gray"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/band_1_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <Spinner
+        android:id="@+id/band_6_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/base_gray"
+        android:entries="@array/temperature_coefficient_list"
+        android:popupBackground="@color/base_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/band_1_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <Spinner
+        android:id="@+id/band_4_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/base_gray"
+        android:entries="@array/multiplier_list"
+        android:popupBackground="@color/base_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/band_1_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <Spinner
+        android:id="@+id/band_5_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/base_gray"
+        android:entries="@array/tolerance_list"
+        android:popupBackground="@color/base_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/band_1_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/selection_band_spinner" />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/result"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/band_6_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
